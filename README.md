@@ -5,6 +5,14 @@ node-ssi
 
 A server-side-include system for nodejs.
 
+v0.4.0 is inspired by [swig](http://paularmstrong.github.io/swig/).
+
+SSI defination:
+
+ - <http://httpd.apache.org/docs/2.4/howto/ssi.html>
+ - <http://nginx.org/en/docs/http/ngx_http_ssi_module.html>
+
+
 We only support parts of nginx ssi syntax:
 
 

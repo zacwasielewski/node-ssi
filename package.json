@@ -2,7 +2,7 @@
   "name": "node-ssi",
   "version": "0.3.0",
   "description": "A SSI parser",
-  "main": "index.js",
+  "main": "./lib/ssi.js",
   "scripts": {
     "test": "grunt test"
   },
