@@ -25,13 +25,13 @@ var async = require('async');
 
 
 var syntaxReg = /<!--#([^\r\n]+?)-->/mg;
-var includeFileReg = /<!--#\s*include\s+(file|virtual)=(['"])([^\r\n]+?)\2\s*-->/;
-var setVarReg = /<!--#\s*set\s+var=(['"])([^\r\n]+?)\1\s+value=(['"])([^\r\n]*?)\3\s*-->/;
-var echoReg = /<!--#\s*echo\s+var=(['"])([^\r\n]+?)\1(\s+default=(['"])([^\r\n]+?)\4)?\s*-->/;
-var ifReg = /<!--#\s*if\s+expr=(['"])([^\r\n]+?)\1\s*-->/;
-var elifReg = /<!--#\s*elif\s+expr=(['"])([^\r\n]+?)\1\s*-->/;
-var elseReg = /<!--#\s*else\s*-->/;
-var endifReg = /<!--#\s*endif\s*-->/;
+var includeFileReg = /<!--#\s*include\s+(file|virtual)=(['"])([^\r\n]+?)\2\s*-->/i;
+var setVarReg = /<!--#\s*set\s+var=(['"])([^\r\n]+?)\1\s+value=(['"])([^\r\n]*?)\3\s*-->/i;
+var echoReg = /<!--#\s*echo\s+var=(['"])([^\r\n]+?)\1(\s+default=(['"])([^\r\n]+?)\4)?\s*-->/i;
+var ifReg = /<!--#\s*if\s+expr=(['"])([^\r\n]+?)\1\s*-->/i;
+var elifReg = /<!--#\s*elif\s+expr=(['"])([^\r\n]+?)\1\s*-->/i;
+var elseReg = /<!--#\s*else\s*-->/i;
+var endifReg = /<!--#\s*endif\s*-->/i;
 
 
 /**
